@@ -282,7 +282,7 @@ void printOneResult (Array& array, std::string name, double constant) {
 }
 
 int main() {
-    int minIndex, maxIndex, operation, index;
+    int minIndex, maxIndex, code, index;
     double constant;
 
     std::cin >> minIndex >> maxIndex;
@@ -303,9 +303,9 @@ int main() {
         std::cout << "delenie na 0" << std::endl;
     }
     
-    while ((std::cin >> operation) && (operation != 0)) {
+    while ((std::cin >> code) && (code != 0)) {
         std::cin >> index;
-        switch (operation) {
+        switch (code) {
         case 1:
             try {
                 std::cout << "Array1[" << index << "]= " << array1[index] << std::endl;
